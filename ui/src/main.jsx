@@ -9,6 +9,10 @@ import Contact from './routes/Contact.jsx';
 
 import Layout from './components/Layout.jsx';
 
+import 'tailwindcss/base.css';
+import 'tailwindcss/components.css';
+import 'tailwindcss/utilities.css';
+
 // Define your routes
 const routes = {
   '/': Home,

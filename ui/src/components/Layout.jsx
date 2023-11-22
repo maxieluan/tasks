@@ -2,6 +2,7 @@
 
 import { h } from 'preact';
 import Sidebar from './Sidebar';
+import "../styles/main.css"
 
 const Layout = ({ children }) => {
   return (
