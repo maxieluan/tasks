@@ -1,0 +1,31 @@
+# Node.js dependencies
+node_modules/
+
+# Compiled files
+build/
+public/build/
+
+# Environment variables
+.env
+
+# IDE/Editor-specific files
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# JSON Server data file
+json-server/db.json
+
+# Ignore the UI's public directory if it's auto-generated and not needed in the repo
+ui/public/
+ui/.svelte-kit
+
+# Ignore JSON Server's node_modules if it's installed separately in the json-server directory
+json-server/node_modules/
