@@ -9,6 +9,10 @@ import Contact from './routes/Contact.jsx';
 
 import Layout from './components/Layout.jsx';
 
+import store from './store.js';
+
+import {Provider} from 'react-redux'
+
 import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';
 import 'tailwindcss/utilities.css';
@@ -35,4 +39,9 @@ const App = () => {
 };
 
 // Render your application
-render(<App />, document.body);
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>, 
+  document.body
+);

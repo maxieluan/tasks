@@ -3,11 +3,16 @@
 import { h } from "preact";
 import Sidebar from "./Sidebar";
 import "../styles/main.css";
+import { createAction } from "@reduxjs/toolkit";
+import {actionCreator, sidebarReducer} from "../reducers/sidebarReducer"
+import store from "../store"
 
 const Layout = ({ children }) => {
   const toggleSidebar = () => {
     const sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("collapsed");
+
+    store.dispatch(actionCreator("test", 2))
   };
 
   // Inline CSS styles for the collapsed sidebar
